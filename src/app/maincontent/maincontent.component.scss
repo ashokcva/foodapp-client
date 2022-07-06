@@ -1,0 +1,49 @@
+::ng-deep {
+    .mat-grid-tile-content{
+        justify-content: space-evenly !important;
+        flex-flow: row wrap;
+        overflow-y: auto;
+    }
+}
+
+.example-card {
+    max-width: 400px;
+    margin-bottom: 8px;
+}
+
+.sidenav-container {
+    height: 100%;
+  }
+  
+  .sidenav {
+    width: 200px;
+  }
+  
+  .sidenav .mat-toolbar {
+    background: inherit;
+  }
+  
+  .mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  } 
+  
+  .example-form-field {
+    width: 200px;
+  }
+  
+  ::ng-deep {
+    .mat-form-field-infix {
+      // border: 0px !important;
+      padding: 8px !important;
+      font-size: 14px;
+  }
+  .mat-grid-tile-content {
+    align-items: initial !important; 
+    }
+  }

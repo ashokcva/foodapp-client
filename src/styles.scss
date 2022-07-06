@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display-swap');
+
+*{
+    box-sizing:border-box;
+ }
+ body{
+    margin:0;
+    font-family:'Times New Roman', Times, serif;
+    font-size:18px;
+ }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@import '~@angular/material/theming';
+@include mat-core();
+
+  $primary: mat-palette($mat-red);
+  $accent: mat-palette($mat-orange,400,200,100);
+
+  $theme: mat-light-theme($primary, $accent);
+
+@include angular-material-theme($theme);
